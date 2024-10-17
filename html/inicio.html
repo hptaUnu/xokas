@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Arcane</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+    <script src="../js/inicio.js"></script>
+</head>
+<body>
+    <header class="menu">
+        <div class="left-section">
+            <div class="logo">
+                <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4138 0L26.1819 32H20.5188C18.051 26.9407 15.8899 25.1279 12.8708 25.1279C9.85171 25.1279 7.69217 26.9407 5.2456 32H0.00012207L11.7698 0H14.4138ZM17.521 24.3479L12.9149 11.468L8.22067 24.3479C9.9398 23.7364 11.5481 23.4836 12.9149 23.4836C14.2604 23.4836 15.8246 23.7364 17.521 24.3479Z"      fill="#A1AFD6"></path>
+                </svg>                     
+            </div>
+            <div class="riot-games">
+                <div id="fist-container"></div> <!-- Aquí se agregará el puño con JS -->
+                <div class="text-container">
+                    <h1 class="riot-text">Riot</h1>
+                    <h1 class="games-text">Games</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <a href="#characters" class="nav-btn">Personajes</a>
+            <a href="https://www.riotgames.com/es/quienes-somos" class="nav-btn">Acerca de</a>
+
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h1>Bienvenido a Arcane</h1>
+            <p>Disfruta del caos desatado.</p>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="../imagenes/fondo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="bottom-content">
+            <h1>ARCANE</h1>
+            <h3>LEAGUE OF LEGENDS</h3>
+            <p>La temporada final de Arcane llega este noviembre a Netflix.</p>
+        </div>
+        <div class="netflix-logo-container">
+            <p>SOLO POR</p>
+            <a href="https://www.netflix.com/co/title/81435684" target="_blank">
+                <img src="../imagenes/netflix.jpeg" alt="Netflix Logo">
+            </a>
+        </div>
+    </section>
+    
+    <!-- Second Section -->
+    <section class="second-section">
+        <div>
+            <div>
+                <h1>Sinopsis de la segunda temporada de Arcane</h1>
+                <h2 id="ardera">Todo arderá</h2>
+                <p>El ataque de Jinx al Consejo preparó el terreno para que el conflicto entre Piltóver y Zaun alcance un nuevo nivel.</p>
+            </div>
+            <img src="../imagenes/arcan.webp" alt="Imagen de Arcane" class="img-thumbnail">
+        </div>
+    </section>
+
+  <!-- Playlist Section -->
+<section class="music-section">
+    <div class="playlist-container">
+        <!-- Inserta el link del álbum de Spotify -->
+        <iframe src="https://open.spotify.com/embed/album/1bnLKOSyzZOiY4Mrw7GCGZ?utm_source=generator" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="music-info">
+        <h2>MÚSICA DE ARCANE</h2>
+        <h1>PAINT THE TOWN BLUE</h1>
+        <p>Las cosas empiezan a agitarse en Zaun y Jinx fue el detonante. "Paint The Town Blue" de Ashnikko te preparará para seguir a Jinx en el emocionante desenlace de Arcane.</p>
+        <div class="music-links">
+            <span>ESCÚCHALA EN</span>
+            <a class="spotify" href="https://open.spotify.com/album/1bnLKOSyzZOiY4Mrw7GCGZ" target="_blank">
+                <img src="../imagenes/spotipai.jpeg" alt="Spotify">
+                <span>Spotify</span>
+            </a>
+            <a class="apple-music" href="https://music.apple.com/us/album/paint-the-town-blue-from-the-series-arcane-league/1761895922" target="_blank">
+                <img src="../imagenes/apple.jpeg" alt="Apple Music">
+                <span>Apple Music</span>
+            </a>
+            <a class="deezer" href="https://www.deezer.com/mx/album/626794661    " target="_blank">
+                <img src="../imagenes/deezer.jpeg" alt="Deezer">
+                <span>Deezer</span>
+            </a>
+            <a class="amazon-music" href="https://music.amazon.com/es-co/albums/B0CF678M9R" target="_blank">
+                <img src="../imagenes/amazon–music.jpeg" alt="Amazon Music">
+                <span>Amazon Music</span>
+            </a>
+            <a class="youtube" href="https://www.youtube.com/watch?v=JYDwTQC5TlE" target="_blank">
+                <img src="../imagenes/youtube.jpeg" alt="YouTube">
+                <span>YouTube</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Third Section with Images -->
+<div class="third-section">
+    <h1>Galería Visual</h1>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="../imagenes/image1.avif" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <img src="../imagenes/image2.jpg" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <img src="../imagenes/image3.jpeg" alt="Imagen 3">
+            </div>
+            <div class="slide">
+                <img src="../imagenes/image4.jpg" alt="Imagen 4">
+            </div>
+            <div class="slide">
+                <img src="../imagenes/image5.jpg" alt="Imagen 5">
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones de navegación manual centrados en la parte inferior -->
+    <div class="nav-manual">
+        <span class="manual-btn active" data-slide="0"></span>
+        <span class="manual-btn" data-slide="1"></span>
+        <span class="manual-btn" data-slide="2"></span>
+        <span class="manual-btn" data-slide="3"></span>
+        <span class="manual-btn" data-slide="4"></span>
+    </div>
+</div>
+
+    
+    <!-- Fourth Section with Images -->
+    <section id="characters" class="section">
+        <h2 class="section-title">Personajes</h2>
+        <div class="character-grid">
+            <div class="character-card">
+                <div class="character-image" data-hover-text="¡Cuidado con Jinx!" data-lore="Jinx es una criminal desquiciada de Zaun...">
+                    <img src="../imagenes/jinx-2.jpeg" alt="Jinx">
+                    <span class="hover-text">Jinx, nacido como Powder, es un notorio criminal
+                         zaunita y La hermana menor de Vi. Cuando era niña, sus padres fueron
+                          asesinados en un levantamiento fallido contra Piltover </span>
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">Jinx</h3>
+                </div>
+            </div>
+    
+            <div class="character-card">
+                <div class="character-image" data-hover-text="Vi al rescate" data-lore="Vi es una defensora de Piltover...">
+                    <img src="../imagenes/vi-2.jpg" alt="Vi">
+                    <span class="hover-text"> Vi, nacida como Violet, es una justiciera zaunita y 
+                         La hermana mayor de Jinx. Una mujer impulsiva 
+                        y valiente que se destaca en la lucha y le gusta resolver sus problemas con los puños.</span>
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">Vi</h3>
+                </div>
+            </div>
+    
+            <div class="character-card">
+                <div class="character-image" data-hover-text="La ciencia de Jayce" data-lore="Jayce es un brillante inventor...">
+                    <img src="../imagenes/Jayce.webp" alt="Jayce">
+                    <span class="hover-text">Jayce Talis es un científico e innovador.
+                         Tras años de éxito liderando el progreso científico y económico
+                          de Piltover, se convierte en el actual presidente de facto del
+                           Consejo de Piltover.</span>
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">Jayce</h3>
+                </div>
+            </div>
+    
+            <div class="character-card">
+                <div class="character-image" data-hover-text="Precisión con Caitlyn" data-lore="Caitlyn es la sheriff de Piltover...">
+                    <img src="../imagenes/catalin.jpeg" alt="Caitlyn">
+                    <span class="hover-text">Caitlyn Kiramman es descendiente del clan Kiramman,
+                         una de las casas gobernantes de Piltover. 
+                         Ansiosa por ver el mundo por sí misma y desdeñosa del estilo de vida
+                          elitista tradicional en el que la habían criado sus padres...</span>
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">Caitlyn</h3>
+                </div>
+            </div>
+    
+            <div class="character-card">
+                <div class="character-image" data-hover-text="Tiempo al mando de Ekko" data-lore="Ekko es un joven prodigio de Zaun...">
+                    <img src="../imagenes/negrito-ojo-claro.webp" alt="Ekko">
+                    <span class="hover-text">Ekko es un inventor zaunita y el líder de los Firelights.
+                         También es amigo de la infancia de Vi y Jinx.
+                          Endurecido por las duras tragedias que experimentó cuando era niño...</span>
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">Ekko</h3>
+                </div>
+            </div>
+    
+            <div class="character-card">
+                <div class="character-image" data-hover-text="Heimerdinger piensa rápido" data-lore="Heimerdinger es un sabio inventor...">
+                    <img src="../imagenes/heimenrique.webp" alt="Heimerdinger">
+                    <span class="hover-text">Heimerdinger es una figura reconocida y respetada en Piltover.
+                         Científico, profesor, decano y ex jefe del Consejo, Heimerdinger ha ayudado a moldear
+                          las mentes de los jóvenes académicos</span>
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">Heimerdinger</h3>
+                </div>
+            </div>
+        </div>
+        <div id="lore-box" class="lore-box"></div>
+    </section>
+    
+    <div class="overlay">
+        <div class="overlay-content">
+            <!-- Texto ampliado sobre League of Legends -->
+            <h1>League of Legends</h1>
+            <p>League of Legends es un juego multijugador de estrategia y acción que te sumerge en el emocionante universo de Runaterra. Controla campeones poderosos y trabaja en equipo para destruir el nexo enemigo.</p>
+            
+            <h2>Runaterra</h2>
+            <p>El vasto mundo de Runaterra está lleno de regiones únicas y poderosos campeones que luchan por sus ideales. Desde las frías tierras de Freljord hasta las junglas de Ixtal, cada región tiene su propio trasfondo y cultura.</p>
+            
+            <h2>Teamfight Tactics</h2>
+            <p>Teamfight Tactics es un juego de estrategia por rondas, ambientado en el universo de League of Legends. Forma un equipo de campeones y lucha por ser el último jugador en pie en batallas automáticas.</p>
+            
+            <h2>Wild Rift</h2>
+            <p>Wild Rift es la versión móvil de League of Legends, diseñada específicamente para dispositivos móviles y consolas. Disfruta de la misma experiencia estratégica con controles optimizados y partidas más rápidas.</p>
+    
+            <h2>Lore de League of Legends</h2>
+            <p>El lore de League of Legends ha crecido con los años, expandiéndose en cómics, series animadas y eventos dentro del juego. Sumérgete en las historias de tus campeones favoritos como Ahri, Yasuo, Jinx, y muchos más mientras exploran sus propios destinos en el mundo de Runaterra.</p>
+            
+            <!-- Botones -->
+            <div class="overlay-buttons">
+                <a href="https://leagueoflegends.fandom.com/es/wiki/League_of_Legends_Wiki" class="btn">Más info</a>
+                <a href="https://www.riotgames.com/es" class="btn">Descarga</a>
+            </div>
+    
+            <!-- Derechos de autor -->
+            <p class="copyright">© 2024 Riot Games, Inc. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    
+
+</section>
+</body>
+</html>

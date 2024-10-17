@@ -1,0 +1,713 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: none;
+}
+.login-btn {
+    display: inline-block;          /* Para que el enlace se comporte como un botón */
+    padding: 10px 20px;           /* Espaciado interno */
+    background-color: #D9534F;    /* Color de fondo */
+    color: white;                  /* Color del texto */
+    text-align: center;            /* Centra el texto */
+    text-decoration: none;         /* Quita el subrayado del enlace */
+    border-radius: 25px;          /* Bordes redondeados */
+    font-size: 14px;               /* Tamaño de fuente */
+    font-weight: bold;             /* Negrita en el texto */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.login-btn:hover {
+    background-color: #C9302C;     /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Sección Izquierda: Riot Games */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.riot-games {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.riot-games:hover .riot-text {
+    color: red;
+}
+
+.riot-games:hover .games-text {
+    color: #A1AFD6;
+}
+
+/* Estilos del Puño */
+#fist {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.riot-games:hover #fist {
+    background-color: red;
+}
+
+/* Estilo del Texto Riot Games */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.riot-text, .games-text {
+    margin: 0;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.riot-text {
+    font-size: 18px;
+    color: white;
+}
+
+.games-text {
+    font-size: 16px;
+    color: #A1AFD6;
+}
+
+/* Sección Derecha: Enlaces de Navegación */
+.right-section {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-btn:hover {
+    color: #A1AFD6;
+}
+
+/* Botón de Inicio de Sesión */
+.login-btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #A1AFD6;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: white;
+}
+
+/* Ajustar la altura de la sección hero */
+.hero {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Asegura que el video no se salga del contenedor */
+}
+
+/* Ajustar el contenedor del video */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Para asegurar que el video no se salga del contenedor */
+    z-index: -1; /* Mantiene el video detrás del contenido */
+}
+
+/* Ajustar el video de fondo */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el espacio disponible */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Asegurarse de que el contenido se mantenga centrado sobre el video */
+.content {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 40%;
+    background: linear-gradient(90deg, rgba(12,5,87,1) 0%, rgba(196,16,16,1) 99%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: translateY(-50%);
+    bottom: 1px;
+}
+.bottom-content{
+    margin: 15%;
+    width: 500px;
+    background: linear-gradient(to right, aliceblue 30%, DarkGray 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+  position: absolute;
+  bottom: 50px;
+  right: 49%;
+}
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.netflix-logo-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+}
+
+
+.netflix-logo-container p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.netflix-logo-container img {
+    position:static;
+    width: 190px; /* Ajusta el tamaño del logo de Netflix */
+    margin-top: 5px;
+    border-radius: 10%;
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 20px 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100px;           /* Ajusta la altura según lo que necesites */
+    background-color: black; /* Color de fondo del navbar */
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre los elementos */
+    width: 60%; /* Ajusta este valor según lo necesites para los elementos del menú */
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px; /* Espacio alrededor de los links */
+}
+
+
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 2;
+    padding: 10px;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Second section */
+.second-section {
+    height: 100vh;
+    background-image: url('../imagenes/jonia.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para organizar el contenido */
+.second-section div {
+    display: flex;
+    justify-content: space-between; /* Coloca la imagen y el texto en los extremos */
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo del contenedor de texto */
+.second-section div > div {
+    display: block; /* Asegura que el texto esté apilado uno sobre el otro */
+    width: 50%; /* Ajusta el ancho del contenedor de texto */
+}
+
+/* Estilo de la imagen */
+.second-section img {
+    width: 40%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo del texto */
+.second-section h1, .second-section h2, .second-section p {
+    margin: 10px 0; /* Añade espacio entre los textos */
+}
+
+.second-section p {
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+/* Music section */
+.music-section {
+    background-image: url('../imagenes/vacio.avif');
+    display: flex;
+    justify-content: space-between; /* Distribuye el reproductor y el texto con espacio entre ellos */
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #121212;
+}
+
+.playlist-container {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start; /* Coloca el reproductor a la izquierda */
+}
+
+.music-info {
+    width: 45%;
+    color: white;
+    text-align: left; /* Mantiene el texto alineado a la izquierda */
+}
+
+.music-links a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px; /* Suaviza las esquinas si es necesario */
+    border: none; /* Elimina cualquier borde visible */
+}
+
+.music-links a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+
+.music-links {
+    display: flex;
+    justify-content: space-between; /* Espaciado horizontal */
+    align-items: center;
+    flex-wrap: wrap; /* Si no cabe todo en una fila, pasa a la siguiente */
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 20px;
+}
+
+.music-links a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* Relleno interior */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Texto en blanco */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.music-links a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+.music-links a span {
+    font-size: 14px;
+}
+
+/* Estilos para cada botón según la plataforma */
+.music-links a.spotify {
+    background: linear-gradient(45deg, #1db954, #1ed760); /* Degradado Spotify */
+}
+
+.music-links a.apple-music {
+    background: linear-gradient(45deg, #fa233b, #ff5e62); /* Degradado Apple Music */
+}
+
+.music-links a.deezer {
+    background: linear-gradient(45deg, #ef5466, #f37a42); /* Degradado Deezer */
+}
+
+.music-links a.amazon-music {
+    background: linear-gradient(45deg, #00c1ff, #00a4ff); /* Degradado Amazon Music */
+}
+
+.music-links a.youtube {
+    background: linear-gradient(45deg, #ff0000, #cc0000); /* Degradado YouTube */
+}
+
+/* Hover y efecto de agrandamiento */
+.music-links a:hover {
+    transform: scale(1.05); /* Agranda un poco al pasar el cursor */
+}
+
+.music-links a:focus {
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+
+
+/* Image gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px; /* Aumenta el espacio alrededor de las imágenes */
+}
+
+.third-section {
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 1s ease-in-out; /* Transición suave del fondo */
+}
+
+.third-section .slider {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.third-section .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.third-section .slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.third-section .slide.active {
+    opacity: 1;
+}
+
+.third-section .nav-manual {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.third-section .manual-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.third-section .manual-btn.active {
+    opacity: 1;
+}
+
+/* Centrar el slider */
+.slider {
+    width: 60%;
+    max-width: 1000px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de las imágenes */
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: margin-left 1s ease-in-out;
+}
+
+.slide {
+    width: 20%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Ocultar las imágenes que no están al frente */
+.slide {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Imagen del centro visible */
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url('../imagenes/Piltover.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 40px; /* Espacio entre cartas */
+    margin-top: 20px;
+}
+
+.character-card {
+    position: relative;
+    background-color: black;
+    padding: 5px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-image {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.character-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover .character-image img {
+    transform: scale(1.1);
+}
+
+/* Estilo del texto que aparece al pasar el cursor */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.character-card:hover .hover-text {
+    opacity: 1;
+}
+
+/* Contenedor del nombre del personaje */
+.character-info {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+.character-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Lore emergente */
+.lore-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.character-card:hover .lore-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    background-image: url('../imagenes/league-of-legends.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto dentro del contenido */
+}
+
+.overlay-content {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 80%; /* Ancho ajustado al 80% */
+    width: 80%; /* Asegura que se expanda a lo ancho */
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 50%; /* Centro vertical */
+    left: 50%; /* Centro horizontal */
+    transform: translate(-50%, -50%); /* Ajuste para centrar en pantalla */
+}
+
+.overlay h1, .overlay h2 {
+    background: linear-gradient(188deg, rgba(19,20,8,1) 0%, rgba(167,141,67,1) 61%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+
+.overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.overlay .copyright {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.overlay-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.overlay .btn {
+    background: linear-gradient(100deg, rgba(0,89,82,1) 0%, rgba(88,146,207,1) 50%, rgba(69,82,140,1) 100%);
+    border: none;
+    color: white;
+    padding: 25px 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin: 10px;
+}
+
+.overlay .btn:hover {
+    transform: scale(1.1);
+    background: radial-gradient(circle, rgba(99,167,198,1) 0%, rgba(71,0,121,1) 50%, rgba(0,31,168,1) 100%);
+}

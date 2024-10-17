@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio y Registro</title>
+    <link rel="stylesheet" href="css/sesion.css">
+</head>
+<body>
+
+    <div class="spray-cursor"></div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Bienvenido</h1>
+
+            <div class="option-buttons">
+                <button id="loginButton" class="button-option">Iniciar Sesión</button>
+                <button id="createButton" class="button-option">Crear Cuenta</button>
+            </div>
+
+            <!-- Formulario de Iniciar Sesión -->
+            <form id="loginForm">
+                <div class="input-box">
+                    <input type="text" id="username" placeholder="Nombre de Usuario">
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Contraseña">
+                </div>
+                <button type="submit" class="submit-button">Entrar</button>
+            </form>
+
+            <!-- Formulario de Crear Cuenta -->
+            <form id="createForm" class="hidden">
+                <div class="input-box">
+                    <input type="text" id="newUsername" placeholder="Crear Usuario">
+                </div>
+                <div class="input-box">
+                    <input type="password" id="newPassword" placeholder="Crear Contraseña">
+                </div>
+                <div class="input-box">
+                    <input type="password" id="confirmPassword" placeholder="Confirmar Contraseña">
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Correo (terminado en @gmail)">
+                </div>
+                <button type="submit" class="submit-button">Crear Cuenta</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/sesion.js"></script>
+</body>
+</html>
